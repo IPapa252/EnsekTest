@@ -44,7 +44,7 @@ namespace WebApi.Tests.Controllers
 
             var okObjectResult = (OkObjectResult)response;
 
-            Assert.That(okObjectResult.Value.ToString(), Is.EqualTo("The file was uploaded successfully. Readings processed: 5. Readings failed: 9"));
+            Assert.That(okObjectResult.Value.ToString(), Is.EqualTo("{ Successes = 5, Failures = 9 }"));
         }
 
         [Test]

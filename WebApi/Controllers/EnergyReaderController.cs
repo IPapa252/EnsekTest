@@ -39,18 +39,5 @@ namespace WebApplication1.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
-        [HttpGet("test")]
-        public async Task<IActionResult> UploadMeterReadings()
-        {
-            try
-            {
-                return Ok($"The file was uploaded successfully");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
-        }
     }
 }
